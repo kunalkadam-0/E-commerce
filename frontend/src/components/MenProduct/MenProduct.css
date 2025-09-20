@@ -1,0 +1,74 @@
+/* frontend/src/components/MenProduct/MenProduct.css */
+
+.men-products-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    margin-top: 100px; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.men-products-title {
+    color: #171717;
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 5px; /* Adjust this value to control the space between the title and the line */
+}
+
+.men-products-hr {
+    width: 100px;
+    height: 6px;
+    border-radius: 10px;
+    background: #252525;
+    border: none;
+    opacity: 1;
+}
+
+.men-products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; 
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 15px;
+    margin-top: 30px;
+}
+
+@media(max-width:1280px){
+    .men-products-title {
+        font-size: 40px;
+    }
+    .men-products-grid {
+        gap: 20px;
+    }
+}
+
+@media(max-width:1024px){
+    .men-products-title {
+        font-size: 30px;
+    }
+    .men-products-grid {
+        gap: 15px;
+    }
+}
+
+@media(max-width:800px){
+    .men-products-title {
+        font-size: 20px;
+    }
+    .men-products-grid {
+        gap: 10px;
+    }
+}
+
+@media(max-width:500px) {
+    .men-products-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}

@@ -1,0 +1,57 @@
+/* frontend/src/components/common/Navbar.css */
+
+/* Custom HR for active link underline in mobile (Bootstrap nav-link active class handles desktop) */
+.nav-menu-hr {
+    border: none;
+    width: 80%;
+    height: 3px;
+    border-radius: 10px;
+    background: red;
+    margin-top: 3px;
+    margin-bottom: 0; /* Remove default margin */
+}
+
+/* Override Bootstrap's nav-link active color if desired */
+.navbar-nav .nav-link.active {
+    color: red !important; /* Example: make active link red */
+    font-weight: 600; /* Example: make active link bold */
+}
+
+/* You might want to adjust font sizes or other small details not fully covered by Bootstrap */
+/* For example, for the "E-COMMERCE" text if not using Bootstrap's default p styling */
+.navbar-brand p {
+    font-size: 26px; /* Your original font size */
+    font-weight: 600; /* Your original font weight */
+    color: #171717; /* Your original color */
+}
+
+
+/* Adjustments for the cart count badge to match original look if needed */
+.badge.rounded-pill.bg-danger {
+    top: -5px !important; /* Adjust vertical position */
+    left: 90% !important; /* Adjust horizontal position */
+    padding: 0.35em 0.6em !important; /* Adjust padding */
+    font-size: 0.75em !important; /* Adjust font size */
+}
+
+/* The @media queries from your original CSS might still be useful for fine-tuning,
+   but much of the core responsiveness will now be handled by Bootstrap classes.
+   You can add specific overrides here if Bootstrap's defaults aren't exactly what you need. */
+
+/* Example of adding original media query if Bootstrap's defaults aren't sufficient
+@media(max-width:500px){
+    .navbar .container-fluid {
+        padding: 8px 0px; 
+    }
+    .navbar-brand {
+       transform: scale(0.6); 
+    }
+    .navbar-collapse {
+        height: 70px;
+        top: 50px;
+    }
+    .d-flex.align-items-center { 
+        transform: scale(0.8);
+    }
+}
+*/

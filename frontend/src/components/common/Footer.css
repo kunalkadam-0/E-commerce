@@ -1,0 +1,38 @@
+/* frontend/src/components/common/Footer.css */
+
+/*
+   Most of the original .footer, .footer-logo, .footer-links, .footer-social-icon,
+   .footer-icons-container, .footer-copyright styles are now handled by Bootstrap classes
+   in Footer.js.
+   
+   Keep only specific overrides or custom styles not covered by Bootstrap.
+*/
+
+/* Example: If you need a specific margin-top that Bootstrap doesn't provide easily for the whole footer */
+/* .footer {
+    margin-top: 50px; 
+} */
+
+/* If you want the specific font size for footer links that is not covered by Bootstrap default text sizes */
+.footer-links li {
+    font-size: 20px; /* Your original font-size for links */
+    color: #252525;  /* Your original color for links */
+    cursor: pointer;
+}
+
+/* If you need to fine-tune the gap for the main footer sections beyond Bootstrap's 'gap-5' */
+/* .footer {
+    gap: 50px;
+} */
+
+/* The hr is replaced by border-top in JSX, no specific hr styling needed here */
+/* .footer-copyright hr {
+    width: 80%;
+    border: none;
+    border-radius: 10px;
+    height: 3px;
+    background: #c7c7c7;
+} */
+
+/* Removed the @media(max-width:800px) query as Bootstrap handles responsiveness */
+/* You can add custom media queries here if you need specific styles not covered by Bootstrap breakpoints */
